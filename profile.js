@@ -7,7 +7,6 @@ let cardsDiv = document.getElementById("cards-div");
 let logoutBtn = document.getElementById("logoutBtn");
 nameText.textContent = username;
 emailText.textContent = email;
-console.log(username);
 fetch(link)
   .then((res) => res.json())
   .then((cards) => {
@@ -23,7 +22,6 @@ function displayCards(cards) {
       cardsDiv.appendChild(nocards);
     } else {
       cards.map((item) => {
-        console.log(item);
         if (item.username == username) {
           let card = document.createElement("div");
           card.classList.add("card");
@@ -55,9 +53,7 @@ function displayCards(cards) {
     }
   });
 }
-checkCards(username).then((isFound) => {
-  console.log(isFound);
-});
+
 function checkCards(username) {
   return fetch(link)
     .then((res) => res.json())

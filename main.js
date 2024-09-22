@@ -22,7 +22,6 @@ closeIcon.addEventListener("click", () => {
 closeIcon2.addEventListener("click", () => {
   addDialog.close();
 });
-console.log(username);
 if (!username) {
   profileLink.classList.add("none");
   signBtn.classList.remove("none");
@@ -93,14 +92,12 @@ addBtn2.addEventListener("click", () => {
     })
       .then((res) => res.json())
       .then((cards) => {
-        console.log("card added");
         addDialog.close();
       });
   }
 });
 emotion.addEventListener("change", () => {
   let selectedEmotion = emotion.value;
-  console.log(selectedEmotion);
   if (selectedEmotion == "joy") {
     emotion.style.color = "#FFD03F";
   } else if (selectedEmotion == "impress") {

@@ -43,10 +43,7 @@ logBtn.addEventListener("click", () => {
             if (password.value != user.password) {
               warningPassword.classList.remove("none");
             } else {
-              console.log("logged is");
               localStorage.setItem("username", username.value);
-              console.log(localStorage.getItem("username"));
-              console.log(localStorage.getItem("email"));
               window.location.href = "index.html";
             }
           });
@@ -82,7 +79,6 @@ changeBtn.addEventListener('click', () => {
                         },
                         body: JSON.stringify(user)
                     }).then(res => res.json()).then(() => {
-                        console.log("password updates");
                         changeText.classList.remove('none')
                     })
                 })
@@ -104,7 +100,6 @@ function checkEmail(email) {
       .then((res) => res.json())
       .then((users) => {
         let isFound = users.some((user) => user.email == email);
-        console.log(isFound);
         return isFound;
       });
   }

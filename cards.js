@@ -10,7 +10,6 @@ let closeIcon = document.getElementById("close-icon");
 closeIcon.addEventListener("click", () => {
   logDialog.close();
 });
-console.log(emotion);
 if (!username) {
     profileLink.classList.add("none");
     signBtn.classList.remove("none");
@@ -43,7 +42,6 @@ fetch(link)
   .then((cards) => {
     cards.map((item) => {
       if (item.emotion == emotion) {
-        console.log(item);
         let card = document.createElement("div");
         card.classList.add("card");
         if (item.emotion == "joy") {

@@ -49,11 +49,9 @@ signBtn.addEventListener("click", () => {
               }),
             })
               .then((res) => res.json())
-              .then((user) => {
-                console.log("Account created");
+              .then(() => {
                 localStorage.setItem("username", username.value);
                 localStorage.setItem("email", email.value);
-                console.log(localStorage.getItem("username"));
                 window.location.href = "index.html";
               });
           }
@@ -74,7 +72,6 @@ function checkUsername(username) {
     .then((res) => res.json())
     .then((users) => {
       let isFound = users.some((user) => user.username == username);
-      console.log(isFound);
       return isFound;
     });
 }
@@ -83,7 +80,6 @@ function checkEmail(email) {
     .then((res) => res.json())
     .then((users) => {
       let isFound = users.some((user) => user.email == email);
-      console.log(isFound);
       return isFound;
     });
 }
