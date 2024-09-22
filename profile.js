@@ -34,7 +34,7 @@ function displayCards(cards) {
           } else if (item.emotion == "anxiety") {
             card.classList.add("anxiety-border");
           }
-          let title = document.createElement("h5");
+          let title = document.createElement("h4");
           let img = document.createElement("img");
           let deleteBtn = document.createElement("button");
           deleteBtn.classList.add("btn");
