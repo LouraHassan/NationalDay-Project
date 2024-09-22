@@ -4,6 +4,7 @@
 }
 body {
   background-color: rgb(1, 68, 35);
+  font-family: 'Tajawal';
 }
 @media screen and (max-width: 599px) {
 
@@ -20,6 +21,7 @@ body {
   }
   .home-title {
     font-size: 1.8rem;
+
   }
   .home-subtitle {
     font-size: large;
@@ -304,12 +306,15 @@ body {
   text-align: center;
   margin: 10px;
   line-height: 1.5em;
+  font-weight: 400;
 }
 .home-subtitle {
   color: white;
   margin: 10px;
   text-align: center;
   line-height: 2rem;
+  font-weight: 400;
+
 }
 .character-div-1 {
   display: grid;
@@ -507,6 +512,7 @@ body {
 }
 .profile-text {
   color: rgb(202, 202, 202);
+  font-weight: 400;
 }
 .navyText {
   color: #c5e8ee;

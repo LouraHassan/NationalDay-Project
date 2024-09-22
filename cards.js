@@ -53,7 +53,7 @@ fetch(link)
         } else if (item.emotion == "anxiety") {
           card.classList.add("anxiety-border");
         }
-        let title = document.createElement("h6");
+        let title = document.createElement("h4");
         let img = document.createElement("img");
         let tag = document.createElement("p");
         title.textContent = item.title;
