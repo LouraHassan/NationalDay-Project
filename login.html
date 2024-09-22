@@ -122,14 +122,60 @@
           <p class="hint-text none red-warning" id="warning-password">
             كلمة المرور غير صحيحة
           </p>
-          <p class="hint-text none red-warning" id="warning-all">
-            جميع الحقول مطلوبة
-          </p>
+          <a class="forgot-text" id="forgot-link">
+           نسيت كلمة المرور؟
+          </a>
         </div>
+        <p class="hint-text none red-warning" id="warning-all">
+          جميع الحقول مطلوبة
+        </p>
         <button class="btn" id="logBtn">تسجيل الدخول</button>
         <p><span>ليس لديك حساب؟</span><a href="signup.html">سجل الآن </a></p>
       </div>
     </div>
+    <dialog id="passwordDialog" class="passwordDialog">
+        <div class="dialog-header">
+          <svg
+            id="close-icon2"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-x"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#004962"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M18 6l-12 12" />
+            <path d="M6 6l12 12" />
+          </svg>
+          <h5>تحديث كلمة المرور</h5>
+        </div>
+        <div class="dialog-body">
+            <div class="select-div">
+                <label for="email" class="text-end">البريد الإلكتروني</label>
+                <input type="text" id="email" class="form-control text-end" />
+              </div>
+              <div class="select-div">
+                <label for="newPassword" class="text-end">كلمة المرور الجديدة</label>
+                <input type="password" id="newPassword" class="form-control text-end" />
+                <p class="hint-text " id="warning-password-2">
+أكثر من 6 أحرف                  </p>
+            </div>
+              <p class="hint-text none red-warning" id="warning-all-2">
+                جميع الحقول مطلوبة
+              </p>
+          <button class="btn dialog-btn" id="changeBtn">تحديث كلمة المرور</button>
+          <p id="changeText" class="none green-text">تم تحديث كلمة المرور بنجاح <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#4da553" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+            <path d="M9 12l2 2l4 -4" />
+          </svg></p>
+        </div>
+      </dialog>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
