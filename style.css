@@ -22,7 +22,7 @@ body {
     font-size: 1.8rem;
   }
   .home-subtitle {
-    font-size: medium;
+    font-size: large;
   }
   .character {
     width: 90%;
@@ -175,7 +175,7 @@ body {
     font-size: 2rem;
   }
   .home-subtitle {
-    font-size: medium;
+    font-size: large;
   }
   .character {
     width: 90%;
@@ -222,7 +222,7 @@ body {
     font-size: 2rem;
   }
   .home-subtitle {
-    font-size: medium;
+    font-size: large;
   }
   .character {
     width: 60%;
@@ -307,8 +307,9 @@ body {
 }
 .home-subtitle {
   color: white;
-  margin: 8px;
+  margin: 10px;
   text-align: center;
+  line-height: 2rem;
 }
 .character-div-1 {
   display: grid;
