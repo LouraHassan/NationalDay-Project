@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>حسابي</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark nav-section sticky-top">
+      <div class="container">
+        <div class="signBtn-div">
+          <button class="btn bg-light none" id="signBtn">تسجيل</button>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="nd94white.png" alt="logo" class="logo me-2" />
+        </a>
+        <div class="collapse navbar-collapse text-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="profile-link"
+                aria-current="page"
+                href="#"
+                >حسابي</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="home-link" href="index.html">الرئيسية</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="profile-container">
+      <div class="container profile-info">
+        <div
+          class="d-flex flex-row-reverse justify-content-start profile-text p-3"
+        >
+          <h4>اسم المستخدم</h4>
+          <h4 class="navyText px-4" id="nameText"></h4>
+        </div>
+        <div
+          class="d-flex flex-row-reverse justify-content-start profile-text p-3 mb-4"
+        >
+          <h4>البريد الإلكتروني</h4>
+          <h4 class="navyText px-4" id="emailText"></h4>
+        </div>
+        <div>
+          <h3 class="text-light p-3">مشاركاتك</h3>
+        </div>
+        <div id="cards-div" class="cards-div p-3"></div>
+        <button id="logoutBtn" class="btn logoutBtn btn-outline-danger">
+          تسجيل الخروج
+        </button>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="profile.js"></script>
+  </body>
+</html>

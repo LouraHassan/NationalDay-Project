@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Control Page</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark nav-section sticky-top">
+      <div class="container">
+        <div class="signBtn-div">
+          <button class="btn nav-btn none" id="signBtn">تسجيل</button>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="nd94white.png" alt="logo" class="logo me-2" />
+        </a>
+        <div class="collapse navbar-collapse text-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" id="profile-link" aria-current="page" href="#"
+                >حسابي</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" id="home-link" href="#">الرئيسية</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container d-flex flex-column align-items-center">
+      <div class="header">
+        <h1 class="home-title">
+          ماهي لحظات او مواقف اليوم الوطني التي تجعلك تشعر بأحد هذه المشاعر ؟
+        </h1>
+        <div class="character-div-1">
+          <div class="character-div">
+            <h2>قلق</h2>
+            <img src="stress.webp" alt="" class="character" />
+          </div>
+          <div class="character-div">
+            <h2>استياء</h2>
+            <img src="sadness.webp" alt="sadness" class="character" />
+          </div>
+          <div class="character-div">
+            <h2>انبهار</h2>
+            <img src="impress.webp" alt="" class="character" />
+          </div>
+          <div class="character-div">
+            <h2>سعادة</h2>
+            <img src="joy.webp" alt="joy" class="character" />
+          </div>
+        </div>
+        <button class="btn add-btn" id="home-add-btn">شاركنا اللحظة</button>
+        <dialog id="logDialog" class="logDialog">
+          <div class="dialog-header">
+            <svg
+              id="close-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-x"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#004962"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M18 6l-12 12" />
+              <path d="M6 6l12 12" />
+            </svg>
+          </div>
+          <div class="dialog-body-log">
+            <h4>يجب عليك التسجيل أولاً</h4>
+            <button class="btn dialog-btn" id="signBtn2">تسجيل</button>
+          </div>
+        </dialog>
+        <dialog id="addDialog" class="addDialog">
+          <div class="dialog-header">
+            <svg
+              id="close-icon-2"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-x"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#004962"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M18 6l-12 12" />
+              <path d="M6 6l12 12" />
+            </svg>
+            <h3>اضافة مشاركة</h3>
+          </div>
+          <div class="dialog-body">
+            <div class="select-div">
+              <label for="card-title">العنوان</label>
+              <input type="text" id="card-title" class="form-control" />
+            </div>
+            <div class="select-div">
+              <label for="emotion">اختر الشعور</label>
+              <select name="emotion" id="emotion" class="custom-select">
+                <option value="empty" class="text-dark">اختر</option>
+                <option value="joy" class="joy-option">سعادة</option>
+                <option value="impress" class="impress-option">انبهار</option>
+                <option value="sadness" class="sadness-option">استياء</option>
+                <option value="anxiety" class="anxiety-option">قلق</option>
+              </select>
+            </div>
+            <div class="select-div">
+              <label for="card-title">رابط الصورة</label>
+              <input type="text" id="card-img" class="form-control" />
+              <p class="hint-text" id="warning-link">.jpg تأكد ان ينتهي بـ</p>
+              <p class="hint-text none red-warning" id="warning-all">
+                جميع الحقول مطلوبة
+              </p>
+            </div>
+            <button class="btn dialog-btn" id="addBtn">أضف</button>
+          </div>
+        </dialog>
+        <h4 class="home-subtitle">
+          👇🏻 اختر الشعور من جهاز التحكم للاطلاع على مشاركات اآخرين
+        </h4>
+      </div>
+      <div class="control-div">
+        <div class="control-panel">
+          <div class="mdBtn color1"></div>
+          <div class="lgBtn color3" onclick="CardsPage('joy')">سعادة</div>
+          <div class="mdBtn color8"></div>
+          <div class="mdBtn color7"></div>
+          <div class="lgBtn color6" onclick="CardsPage('impress')">انبهار</div>
+          <div class="mdBtn color5"></div>
+          <div class="mdBtn color2"></div>
+          <div class="lgBtn color11" onclick="CardsPage('sadness')">استياء</div>
+          <div class="mdBtn color9"></div>
+          <div class="mdBtn color3"></div>
+          <div class="lgBtn color4" onclick="CardsPage('anxiety')">قلق</div>
+          <div class="mdBtn color1"></div>
+        </div>
+      </div>
+      <script async src="https://www.tiktok.com/embed.js"></script>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
