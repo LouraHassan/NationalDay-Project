@@ -40,7 +40,7 @@ function displayCards(cards) {
           let img = document.createElement("img");
           let deleteBtn = document.createElement("button");
           deleteBtn.classList.add("btn");
-          deleteBtn.classList.add("my-3");
+            deleteBtn.classList.add("my-3");
           deleteBtn.classList.add("btn-danger");
           deleteBtn.addEventListener("click", () => deleteCard(item.id));
           title.textContent = item.title;

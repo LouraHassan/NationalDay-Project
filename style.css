@@ -6,8 +6,7 @@ body {
   background-color: rgb(1, 68, 35);
 }
 @media screen and (max-width: 599px) {
-  .nav-section {
-  }
+
   .navbar-brand {
     display: flex;
     justify-content: center;
@@ -42,6 +41,9 @@ body {
     width: 60%;
     text-align: center;
   }
+  .page-title {
+    flex-direction: column-reverse;
+  }
   .cards-div {
     column-count: 1;
   }
@@ -53,8 +55,7 @@ body {
   }
 }
 @media screen and (min-width: 600px) and (max-width: 800px) {
-  .nav-section {
-  }
+ 
   .navbar-brand {
     display: flex;
     justify-content: center;
@@ -89,6 +90,9 @@ body {
     width: 50%;
     text-align: center;
   }
+  .page-title {
+    flex-direction: column-reverse;
+  }
   .cards-div {
     column-count: 2;
   }
@@ -100,8 +104,7 @@ body {
   }
 }
 @media screen and (min-width: 801px) and (max-width: 842px) {
-  .nav-section {
-  }
+ 
   .navbar-brand {
     display: flex;
     justify-content: center;
@@ -147,8 +150,7 @@ body {
   }
 }
 @media screen and (min-width: 842px) and (max-width: 982px) {
-  .nav-section {
-  }
+ 
   .navbar-brand {
     display: flex;
     justify-content: center;
@@ -496,17 +498,19 @@ body {
 }
 /* ? cards page */
 .page-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin: 10px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 10px;
+    padding-bottom: 10px;
+  }
 .back-link {
   margin-left: auto;
   color: white;
   cursor: pointer;
   text-decoration: none;
+  margin-bottom: 10px;
 }
 .back-link:hover {
   color: white;
@@ -530,10 +534,15 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.card h5{
+    text-align: center;
+    margin: 10px 0px;
+}
 .card img {
   width: 90%;
   object-fit: cover;
   border-radius: 5px;
+  margin: 10px 0px;
 }
 .card p {
   padding-top: 10px;

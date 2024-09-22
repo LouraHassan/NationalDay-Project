@@ -11,9 +11,10 @@ closeIcon.addEventListener("click", () => {
   logDialog.close();
 });
 console.log(emotion);
-if (username) {
-  signBtn.classList.add("none");
-}
+if (!username) {
+    profileLink.classList.add("none");
+    signBtn.classList.remove("none");
+  }
 signBtn.addEventListener("click", () => {
   window.location.href = "signup.html";
 });
